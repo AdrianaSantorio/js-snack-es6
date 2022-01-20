@@ -26,20 +26,24 @@ const bicycles = [
 ];
 
 let smallerweight = bicycles[0].weight;
+let bike = '';
 console.log(smallerweight);
 
 for (let i = 0; i < bicycles.length; i++) { //ciclo relativo all' array
     const {weight} = bicycles[i]; //2
+    const {name} = bicycles[i];
     console.log(weight);
     if (smallerweight > weight) { //3
         smallerweight = weight
+        bike = name;
         console.log(smallerweight);
     };
 };
 
 //todo: funzione?
 
-console.log(`La bicicletta dal peso minore pesa ${smallerweight} gr`)
-//todo: collegare marca bicicletta?
+//collegare marca bicicletta
+console.log(`La bicicletta dal peso minore è la ${bike}, che pesa ${smallerweight} gr`)
+
 
 //todo: bonus
