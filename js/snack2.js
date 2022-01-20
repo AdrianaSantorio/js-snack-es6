@@ -18,16 +18,35 @@ Stampare in pagina oltre che in console!
 
 console.log('JS OK');
 
+//2 
+
+function getRandomNumber (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+let prova = getRandomNumber(1,5);
+console.log('prova:', prova);
+
 //1
 
 const soccerTeams = [
-    { name: 'Liverpool', points: 0, 'fouls drawn': 0,},
-    { name: 'Chelsea', points: 0, 'fouls drawn': 0,},
-    { name: 'Manchester United', points: 0, 'fouls drawn': 0,},
-    { name: 'Manchester City', points: 0, 'fouls drawn': 0,},
-    { name: 'Tottenham Hotspur', points: 0, 'fouls drawn': 0,},
-    { name: 'Everton', points: 0, 'fouls drawn': 0,},
-    { name: 'Crystal Palace', points: 0, 'fouls drawn': 0,},
-    { name: 'West Ham United', points: 0, 'fouls drawn': 0,},
+    { name: 'Liverpool', points: 0, foulsDrawn: 0,},
+    { name: 'Chelsea', points: 0, foulsDrawn: 0,},
+    { name: 'Manchester United', points: 0, foulsDrawn: 0,},
+    { name: 'Manchester City', points: 0, foulsDrawn: 0,},
+    { name: 'Tottenham Hotspur', points: 0, foulsDrawn: 0,},
+    { name: 'Everton', points: 0, foulsDrawn: 0,},
+    { name: 'Crystal Palace', points: 0, foulsDrawn: 0,},
+    { name: 'West Ham United', points: 0, foulsDrawn: 0,},
 ];
+console.table(soccerTeams);
 
+//3
+
+for (let i = 0; i <soccerTeams.length; i++) { //ciclo legato all' array
+    const currentTeam = soccerTeams[i];
+    currentTeam['points'] = getRandomNumber(0, 100);
+    console.log(points);
+}
+
+console.table(soccerTeams);

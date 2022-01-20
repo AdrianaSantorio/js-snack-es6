@@ -2,6 +2,8 @@
 Creare un array di oggetti:
 Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 Stampare in console la bici con peso minore utilizzando destructuring e template literal
+BONUS
+Stampare in pagina oltre che in console!
 */
 
 /* 
@@ -9,7 +11,7 @@ Stampare in console la bici con peso minore utilizzando destructuring e template
 2- ricavare la variabile peso
 3- trovare il peso minore
 */
-
+console.log('JS OK');
 
 const bicycles = [
     {name: 'Road bike', weight: 358,},
@@ -29,8 +31,8 @@ console.log(smallerweight);
 for (let i = 0; i < bicycles.length; i++) { //ciclo relativo all' array
     const {weight} = bicycles[i]; //2
     console.log(weight);
-    if (smallerweight > weight) {
-        smallerweight= weight
+    if (smallerweight > weight) { //3
+        smallerweight = weight
         console.log(smallerweight);
     };
 };
