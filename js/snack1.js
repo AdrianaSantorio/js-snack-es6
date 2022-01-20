@@ -38,5 +38,6 @@ for (let i = 0; i < bicycles.length; i++) { //ciclo relativo all' array
 //todo: funzione?
 
 console.log(`La bicicletta dal peso minore pesa ${smallerweight} gr`)
+//todo: collegare marca bicicletta?
 
 //todo: bonus
