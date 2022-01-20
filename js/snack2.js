@@ -9,3 +9,25 @@ BONUS
 Stampare in pagina oltre che in console!
 
 */
+
+/*
+1 - creare un array di oggetti squadre di calcio
+2 - generare numeri random (funzione)
+3 - associarli alle proprietà punti fatti e falli subiti
+*/
+
+console.log('JS OK');
+
+//1
+
+const soccerTeams = [
+    { name: 'Liverpool', points: 0, 'fouls drawn': 0,},
+    { name: 'Chelsea', points: 0, 'fouls drawn': 0,},
+    { name: 'Manchester United', points: 0, 'fouls drawn': 0,},
+    { name: 'Manchester City', points: 0, 'fouls drawn': 0,},
+    { name: 'Tottenham Hotspur', points: 0, 'fouls drawn': 0,},
+    { name: 'Everton', points: 0, 'fouls drawn': 0,},
+    { name: 'Crystal Palace', points: 0, 'fouls drawn': 0,},
+    { name: 'West Ham United', points: 0, 'fouls drawn': 0,},
+];
+
