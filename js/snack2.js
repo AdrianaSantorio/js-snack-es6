@@ -14,6 +14,9 @@ Stampare in pagina oltre che in console!
 1 - creare un array di oggetti squadre di calcio
 2 - generare numeri random (funzione)
 3 - associarli alle proprietà punti fatti e falli subiti
+4 - estrapolare nomi e falli subiti
+5 - inserirli in un nuovo array
+6 - stampare il nuovo array
 */
 
 console.log('JS OK');
@@ -50,3 +53,22 @@ for (let i = 0; i <soccerTeams.length; i++) { //ciclo legato all' array
 }
 
 console.table(soccerTeams);
+
+//4 
+
+const chartedFouls = [];
+console.table(chartedFouls);
+
+for (let i = 0; i <soccerTeams.length; i++) { //ciclo legato all' array
+    const {name, foulsDrawn} = soccerTeams[i]; //4
+    console.log(name);
+    console.log(foulsDrawn);
+    
+    const addTeam = {}; //5
+    addTeam.name = name;
+    addTeam.foulsDrawn = foulsDrawn;
+
+    chartedFouls.push(addTeam);
+}
+
+console.table(chartedFouls);
