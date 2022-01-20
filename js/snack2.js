@@ -45,8 +45,8 @@ console.table(soccerTeams);
 
 for (let i = 0; i <soccerTeams.length; i++) { //ciclo legato all' array
     const currentTeam = soccerTeams[i];
-    currentTeam['points'] = getRandomNumber(0, 100);
-    console.log(points);
+    currentTeam.points = getRandomNumber(0, 100);
+    currentTeam.foulsDrawn = getRandomNumber(0,300);
 }
 
 console.table(soccerTeams);
