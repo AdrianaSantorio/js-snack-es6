@@ -72,3 +72,16 @@ for (let i = 0; i <soccerTeams.length; i++) { //ciclo legato all' array
 }
 
 console.table(chartedFouls);
+
+const displayElement = document.getElementById('display');
+
+for (let i = 0; i <chartedFouls.length; i++) { //ciclo legato all' array
+    for (let key in chartedFouls[i]) {
+        const div = document.createElement('div');
+        const strong = document.createElement('strong');
+        strong.append(key + ': '); //inserisce chiave nello strong
+        div.appendChild(strong);
+        div.append(chartedFouls[i][key]);//append mette del testo alla fine
+        displayElement.appendChild(div);
+    }
+};
