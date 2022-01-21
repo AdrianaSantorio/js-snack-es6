@@ -25,8 +25,12 @@ const students = [
     {id:145, name:'lorenzo de klein', grades:54,},
 ];
 
-const plaques = students.map ((item) => {
-    return item.name;
+const plaques = students.map ((student) => {
+    
+    const {name} = student;
+    const initial = name.charAt(0).toUpperCase();
+    const otherLetters = name.substring(1).toLowerCase();
+    return initial + otherLetters;
 });
 
 console.log(plaques);
