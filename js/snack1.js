@@ -25,25 +25,27 @@ const bicycles = [
     {name: 'Utility Bike', weight: 530,},
 ];
 
-let smallerweight = bicycles[0].weight;
+
+//# rispetto al ragionaento, c'è la differenza, nel senso che io cercavo il peso minore, loro cercavano L' OGGETTO col peso minore
+let smallestweight = bicycles[0].weight;
 let bike = '';
-console.log(smallerweight);
+console.log(smallestweight);
 
 for (let i = 0; i < bicycles.length; i++) { //ciclo relativo all' array
-    const {weight} = bicycles[i]; //2
-    const {name} = bicycles[i];
+    const {weight, name} = bicycles[i]; //2
     console.log(weight);
-    if (smallerweight > weight) { //3
-        smallerweight = weight
+
+    if (smallestweight > weight) { //3
+        smallestweight = weight
         bike = name;
-        console.log(smallerweight);
+        console.log(smallestweight);
     };
 };
 
-//todo: funzione?
+//todo: funzione?(blergh)
 
 //collegare marca bicicletta
-console.log(`La bicicletta dal peso minore è la ${bike}, che pesa ${smallerweight} gr`)
+console.log(`La bicicletta dal peso minore è la ${bike}, che pesa ${smallestweight} gr`)
 
 
 //todo: bonus

@@ -45,7 +45,7 @@ const soccerTeams = [
 console.table(soccerTeams);
 
 //3
-
+//#apparently current è brutto usarlo, cambiamo semplicemente in team
 for (let i = 0; i <soccerTeams.length; i++) { //ciclo legato all' array
     const currentTeam = soccerTeams[i];
     currentTeam.points = getRandomNumber(0, 100);
@@ -63,7 +63,7 @@ for (let i = 0; i <soccerTeams.length; i++) { //ciclo legato all' array
     const {name, foulsDrawn} = soccerTeams[i]; //4
     console.log(name);
     console.log(foulsDrawn);
-    
+    //#sta roba poteva esser fatta molto più brevemente, ricordandosi anche la notazione se il nome della proprietà e il nome della costante che indica il valore coincidono
     const addTeam = {}; //5
     addTeam.name = name;
     addTeam.foulsDrawn = foulsDrawn;
